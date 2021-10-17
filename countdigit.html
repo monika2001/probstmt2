@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count the digits</title>
+</head>
+
+<body>
+    <header>
+        <h1>Program for Counts the digits in a number</h1>
+    </header>
+    <hr>
+    <section>
+        <code>
+                #include <iostream> using namespace std;<br>
+
+                // Function to counts the digits in a number<br>
+                int countDigit(long long n)<br>
+                {<br>
+                     int count = 0;<br>
+                     while (n != 0)<br>
+
+                    {<br>
+                       n = n / 10;<br>
+                       ++count;<br>
+                     }<br>
+                     return count;<br>
+                }<br>  
+    
+                int main(void)<br>
+                {<br>
+                long long n = 345289467;<br>
+                cout << "Number of digits : " << countDigit(n);<br>
+                return 0;<br>
+                }<br>
+                       
+
+        </code>
+        <hr>
+        <a href="digi.cpp">Access Code from here</a>
+    </section>
+    <hr>
+    <section>
+        <h2>Sample input</h2>
+        <p>345289467</p>
+        
+    </section>
+    <hr>
+    <section>
+        <h2>Sample output</h2>
+        <p>9</p>
+    </section>
+    <hr>
+    <section>
+        <h2>Varibles used in program</h2>
+        <var>n </var>
+    </section>
+    <hr>
+    <section>
+        <h2>Complexity</h2>
+        <p>O(n)</p>
+    </section>
+</body>
+
+</html>
